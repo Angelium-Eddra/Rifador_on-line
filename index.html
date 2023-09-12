@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Escolha um ou mais números e boa sorte!</h2>
+    
+    <form action="" id="info">
+
+        <button id="ok_button" onclick="javascript:save_num()">Confirmar número</button>
+        <button id="cancel_button"onclick="javascript: cancel()">Cancelar número</button>
+        
+        <div id="form">
+            <p>Insira aqui o seu nome:</p>
+            <input type="text">
+        </div>
+            
+        <div>
+            <p>Insira aqui seu número de telefone:<p>
+            <input type="text">
+        </div>
+
+        <div>
+            <p>Insira a forma de pagamento:</p>
+            <input type="text">
+        </div>
+
+    </form>
+    <table>
+        <tr>
+            <td><button id="rfbtn_001" class="riff_button">001</button></td> <td><button id="rfbtn_002" class="riff_button">002</button></td>
+            <td><button id="rfbtn_003" class="riff_button">003</button></td> <td><button id="rfbtn_004" class="riff_button">004</button></td>
+            <td><button id="rfbtn_005" class="riff_button">005</button></td> <td><button id="rfbtn_006" class="riff_button">006</button></td>
+            <td><button id="rfbtn_007" class="riff_button">007</button></td> <td><button id="rfbtn_008" class="riff_button">008</button></td>
+            <td><button id="rfbtn_009" class="riff_button">009</button></td> <td><button id="rfbtn_010" class="riff_button">010</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_011" class="riff_button">011</button></td> <td><button id="rfbtn_012" class="riff_button">012</button></td>
+            <td><button id="rfbtn_013" class="riff_button">013</button></td> <td><button id="rfbtn_014" class="riff_button">014</button></td>
+            <td><button id="rfbtn_015" class="riff_button">015</button></td> <td><button id="rfbtn_016" class="riff_button">016</button></td>
+            <td><button id="rfbtn_017" class="riff_button">017</button></td> <td><button id="rfbtn_018" class="riff_button">018</button></td>
+            <td><button id="rfbtn_019" class="riff_button">019</button></td> <td><button id="rfbtn_020" class="riff_button">020</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_021" class="riff_button">021</button></td> <td><button id="rfbtn_022" class="riff_button">022</button></td>
+            <td><button id="rfbtn_023" class="riff_button">023</button></td> <td><button id="rfbtn_024" class="riff_button">024</button></td>
+            <td><button id="rfbtn_025" class="riff_button">025</button></td> <td><button id="rfbtn_026" class="riff_button">026</button></td>
+            <td><button id="rfbtn_027" class="riff_button">027</button></td> <td><button id="rfbtn_028" class="riff_button">028</button></td>
+            <td><button id="rfbtn_029" class="riff_button">029</button></td> <td><button id="rfbtn_030" class="riff_button">030</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_031" class="riff_button">031</button></td> <td><button id="rfbtn_032" class="riff_button">032</button></td>
+            <td><button id="rfbtn_033" class="riff_button">033</button></td> <td><button id="rfbtn_034" class="riff_button">034</button></td>
+            <td><button id="rfbtn_035" class="riff_button">035</button></td> <td><button id="rfbtn_036" class="riff_button">036</button></td>
+            <td><button id="rfbtn_037" class="riff_button">037</button></td> <td><button id="rfbtn_038" class="riff_button">038</button></td>
+            <td><button id="rfbtn_039" class="riff_button">039</button></td> <td><button id="rfbtn_040" class="riff_button">040</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_041" class="riff_button">041</button></td> <td><button id="rfbtn_042" class="riff_button">042</button></td>
+            <td><button id="rfbtn_043" class="riff_button">043</button></td> <td><button id="rfbtn_044" class="riff_button">044</button></td>
+            <td><button id="rfbtn_045" class="riff_button">045</button></td> <td><button id="rfbtn_046" class="riff_button">046</button></td>
+            <td><button id="rfbtn_047" class="riff_button">047</button></td> <td><button id="rfbtn_048" class="riff_button">048</button></td>
+            <td><button id="rfbtn_049" class="riff_button">049</button></td> <td><button id="rfbtn_050" class="riff_button">050</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_051" class="riff_button">051</button></td> <td><button id="rfbtn_052" class="riff_button">052</button></td>
+            <td><button id="rfbtn_053" class="riff_button">053</button></td> <td><button id="rfbtn_054" class="riff_button">054</button></td>
+            <td><button id="rfbtn_055" class="riff_button">055</button></td> <td><button id="rfbtn_056" class="riff_button">056</button></td>
+            <td><button id="rfbtn_057" class="riff_button">057</button></td> <td><button id="rfbtn_058" class="riff_button">058</button></td>
+            <td><button id="rfbtn_059" class="riff_button">059</button></td> <td><button id="rfbtn_060" class="riff_button">060</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_061" class="riff_button">061</button></td> <td><button id="rfbtn_062" class="riff_button">062</button></td>
+            <td><button id="rfbtn_063" class="riff_button">063</button></td> <td><button id="rfbtn_064" class="riff_button">064</button></td>
+            <td><button id="rfbtn_065" class="riff_button">065</button></td> <td><button id="rfbtn_066" class="riff_button">066</button></td>
+            <td><button id="rfbtn_067" class="riff_button">067</button></td> <td><button id="rfbtn_068" class="riff_button">068</button></td>
+            <td><button id="rfbtn_069" class="riff_button">069</button></td> <td><button id="rfbtn_070" class="riff_button">070</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_071" class="riff_button">071</button></td> <td><button id="rfbtn_072" class="riff_button">072</button></td>
+            <td><button id="rfbtn_073" class="riff_button">073</button></td> <td><button id="rfbtn_074" class="riff_button">074</button></td>
+            <td><button id="rfbtn_075" class="riff_button">075</button></td> <td><button id="rfbtn_076" class="riff_button">076</button></td>
+            <td><button id="rfbtn_077" class="riff_button">077</button></td> <td><button id="rfbtn_078" class="riff_button">078</button></td>
+            <td><button id="rfbtn_079" class="riff_button">079</button></td> <td><button id="rfbtn_080" class="riff_button">080</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_081" class="riff_button">081</button></td> <td><button id="rfbtn_082" class="riff_button">082</button></td>
+            <td><button id="rfbtn_083" class="riff_button">083</button></td> <td><button id="rfbtn_084" class="riff_button">084</button></td>
+            <td><button id="rfbtn_085" class="riff_button">085</button></td> <td><button id="rfbtn_086" class="riff_button">086</button></td>
+            <td><button id="rfbtn_087" class="riff_button">087</button></td> <td><button id="rfbtn_088" class="riff_button">088</button></td>
+            <td><button id="rfbtn_089" class="riff_button">089</button></td> <td><button id="rfbtn_090" class="riff_button">090</button></td>
+        </tr>
+        <tr>
+            <td><button id="rfbtn_091" class="riff_button">091</button></td> <td><button id="rfbtn_092" class="riff_button">092</button></td>
+            <td><button id="rfbtn_093" class="riff_button">093</button></td> <td><button id="rfbtn_094" class="riff_button">094</button></td>
+            <td><button id="rfbtn_095" class="riff_button">095</button></td> <td><button id="rfbtn_096" class="riff_button">096</button></td>
+            <td><button id="rfbtn_097" class="riff_button">097</button></td> <td><button id="rfbtn_098" class="riff_button">098</button></td>
+            <td><button id="rfbtn_099" class="riff_button">099</button></td> <td><button id="rfbtn_100" class="riff_button">100</button></td>
+        </tr>
+    </table>
+</body>
+</html>
