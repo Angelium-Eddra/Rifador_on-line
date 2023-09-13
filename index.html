@@ -9,28 +9,28 @@
 <body>
     <h2>Escolha um ou mais números e boa sorte!</h2>
     
-    <form action="" id="info">
-
-        <button id="ok_button" onclick="javascript:save_num()">Confirmar número</button>
-        <button id="cancel_button"onclick="javascript: cancel()">Cancelar número</button>
+    <form id="form_info">
         
-        <div id="form">
-            <p>Insira aqui o seu nome:</p>
-            <input type="text">
+        <div class="preencher">
+            <p class="question">Insira aqui o seu nome:</p>
+            <input class="input" type="text">
+        </div>
+    
+        <div class="preencher">
+            <p class="question">Insira aqui seu número de telefone:<p>
+            <input class="input" type="text">
+        </div>
+        
+        <div class="preencher">
+            <p class="question">Insira a forma de pagamento:</p>
+            <input class="input" type="text">
         </div>
             
-        <div>
-            <p>Insira aqui seu número de telefone:<p>
-            <input type="text">
-        </div>
-
-        <div>
-            <p>Insira a forma de pagamento:</p>
-            <input type="text">
-        </div>
-
+        <button id="ok_button" onclick="save_nums()">Confirmar</button>
+        <button id="cancel_button"onclick="cancel()">Cancelar</button>
     </form>
-    <table>
+    
+    <table id="table">
         <tr>
             <td><button id="rfbtn_001" class="riff_button">001</button></td> <td><button id="rfbtn_002" class="riff_button">002</button></td>
             <td><button id="rfbtn_003" class="riff_button">003</button></td> <td><button id="rfbtn_004" class="riff_button">004</button></td>

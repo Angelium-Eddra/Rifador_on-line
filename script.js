@@ -1,7 +1,3 @@
-function save_num(){
-    
-}
-
-function cancel(){
+function save_nums(){
     
 }
