@@ -6,154 +6,59 @@
     <title>Rifador</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>\
-    <h2>Escolha um ou mais números e boa sorte!</h2>
+<body>
+    <h1>Bem vindo a rifa online: Dia dos pais!</h1>
+    <h2>Escolha mais números e boa sorte!</h2>
     
-    <form id="form_info">
-        
-        <div class="preencher">
-            <p class="question">Insira aqui o seu nome:</p>
-            <input class="input" type="text">
-        </div>
-    
-        <div class="preencher">
-            <p class="question">Insira aqui seu número de telefone:<p>
-            <input class="input" type="text">
-        </div>
-        
-        <div class="preencher">
-            <p class="question">Insira a forma de pagamento:</p>
-            <input class="input" type="text">
-        </div>
+    <form id="marcando_numero_rifa">    
+        <fieldset>
+            <div>
+                <label for="nome">
+                    Insira seu nome:
+                    <input type="text" id="nome">
+                </label>
+            </div>
             
-        <p id="valor">Preço final: R$ 0,00</p>
+            <div>
+                <label for="telefone">
+                    Insira seu nome:
+                    <input type="text" id="telefone">
+                </label>
+            
+            </div>
+            
+            <div>
+                <label for="forma_pagamento">
+                    Insira a forma de pagamento:
+                    <select name="" id="forma_pagamento">
+                        <option value="Cartão0">Cartão</option>
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Pix" selected>Pix</option>
+                        <option value="Outra forma">Outra forma</option>
+                    </select>
+                </label>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </fieldset>
 
-        <button id="ok_button" onclick="save_nums()">Confirmar</button>
-        <button id="cancel_button"onclick="cancel()">Cancelar</button>
+        <table>
+            <tr>
+                <td><label for="001">001<input type="checkbox" class="numeros" id="001" onclick="escolhido('001')"></label></td>
+                <td><label for="002">002<input type="checkbox" class="numeros" id="002" onclick="escolhido('002')"></label></td>
+                <td><label for="003">003<input type="checkbox" class="numeros" id="003" onclick="escolhido('003')"></label></td>
+                <td><label for="004">004<input type="checkbox" class="numeros" id="004" onclick="escolhido('004')"></label></td>
+                <td><label for="005">005<input type="checkbox" class="numeros" id="005" onclick="escolhido('005')"></label></td>
+                <td><label for="006">006<input type="checkbox" class="numeros" id="006" onclick="escolhido('006')"></label></td>
+                <td><label for="007">007<input type="checkbox" class="numeros" id="007" onclick="escolhido('007')"></label></td>
+                <td><label for="007">008<input type="checkbox" class="numeros" id="008" onclick="escolhido('008')"></label></td>
+                <td><label for="007">009<input type="checkbox" class="numeros" id="009" onclick="escolhido('009')"></label></td>
+                <td><label for="007">010<input type="checkbox" class="numeros" id="010" onclick="escolhido('010')"></label></td>
+            </tr>
+        </table>
     </form>
     
-    <table id="table">
-        <tr>
-            <td><button id="001" class="riff_button" onclick="escolhido('001')">001</button></td>
-            <td><button id="002" class="riff_button" onclick="escolhido('002')">002</button></td>
-            <td><button id="003" class="riff_button" onclick="escolhido('003')">003</button></td>
-            <td><button id="004" class="riff_button" onclick="escolhido('004')">004</button></td>
-            <td><button id="005" class="riff_button" onclick="escolhido('005')">005</button></td>
-            <td><button id="006" class="riff_button" onclick="escolhido('006')">006</button></td>
-            <td><button id="007" class="riff_button" onclick="escolhido('007')">007</button></td>
-            <td><button id="008" class="riff_button" onclick="escolhido('008')">008</button></td>
-            <td><button id="009" class="riff_button" onclick="escolhido('009')">009</button></td>
-            <td><button id="010" class="riff_button" onclick="escolhido('010')">010</button></td>
-        </tr>
-        <tr>
-            <td><button id="011" class="riff_button" onclick="escolhido('011')">011</button></td>
-            <td><button id="012" class="riff_button" onclick="escolhido('012')">012</button></td>
-            <td><button id="013" class="riff_button" onclick="escolhido('013')">013</button></td>
-            <td><button id="014" class="riff_button" onclick="escolhido('014')">014</button></td>
-            <td><button id="015" class="riff_button" onclick="escolhido('015')">015</button></td>
-            <td><button id="016" class="riff_button" onclick="escolhido('016')">016</button></td>
-            <td><button id="017" class="riff_button" onclick="escolhido('017')">017</button></td>
-            <td><button id="018" class="riff_button" onclick="escolhido('018')">018</button></td>
-            <td><button id="019" class="riff_button" onclick="escolhido('019')">019</button></td>
-            <td><button id="020" class="riff_button" onclick="escolhido('020')">020</button></td>
-        </tr>
-        <tr>
-            <td><button id="021" class="riff_button" onclick="escolhido('021')">021</button></td>
-            <td><button id="022" class="riff_button" onclick="escolhido('022')">022</button></td>
-            <td><button id="023" class="riff_button" onclick="escolhido('023')">023</button></td>
-            <td><button id="024" class="riff_button" onclick="escolhido('024')">024</button></td>
-            <td><button id="025" class="riff_button" onclick="escolhido('025')">025</button></td>
-            <td><button id="026" class="riff_button" onclick="escolhido('026')">026</button></td>
-            <td><button id="027" class="riff_button" onclick="escolhido('027')">027</button></td>
-            <td><button id="028" class="riff_button" onclick="escolhido('028')">028</button></td>
-            <td><button id="029" class="riff_button" onclick="escolhido('029')">029</button></td>
-            <td><button id="030" class="riff_button" onclick="escolhido('030')">030</button></td>
-        </tr>
-        <tr>
-            <td><button id="031" class="riff_button" onclick="escolhido('031')">031</button></td>
-            <td><button id="032" class="riff_button" onclick="escolhido('032')">032</button></td>
-            <td><button id="033" class="riff_button" onclick="escolhido('033')">033</button></td>
-            <td><button id="034" class="riff_button" onclick="escolhido('034')">034</button></td>
-            <td><button id="035" class="riff_button" onclick="escolhido('035')">035</button></td>
-            <td><button id="036" class="riff_button" onclick="escolhido('036')">036</button></td>
-            <td><button id="037" class="riff_button" onclick="escolhido('037')">037</button></td>
-            <td><button id="038" class="riff_button" onclick="escolhido('038')">038</button></td>
-            <td><button id="039" class="riff_button" onclick="escolhido('039')">039</button></td>
-            <td><button id="040" class="riff_button" onclick="escolhido('040')">040</button></td>
-        </tr>
-        <tr>
-            <td><button id="041" class="riff_button" onclick="escolhido('041')">041</button></td>
-            <td><button id="042" class="riff_button" onclick="escolhido('042')">042</button></td>
-            <td><button id="043" class="riff_button" onclick="escolhido('043')">043</button></td>
-            <td><button id="044" class="riff_button" onclick="escolhido('044')">044</button></td>
-            <td><button id="045" class="riff_button" onclick="escolhido('045')">045</button></td>
-            <td><button id="046" class="riff_button" onclick="escolhido('046')">046</button></td>
-            <td><button id="047" class="riff_button" onclick="escolhido('047')">047</button></td>
-            <td><button id="048" class="riff_button" onclick="escolhido('048')">048</button></td>
-            <td><button id="049" class="riff_button" onclick="escolhido('049')">049</button></td>
-            <td><button id="050" class="riff_button" onclick="escolhido('050')">050</button></td>
-        </tr>
-        <tr>
-            <td><button id="051" class="riff_button" onclick="escolhido('051')">051</button></td>
-            <td><button id="052" class="riff_button" onclick="escolhido('052')">052</button></td>
-            <td><button id="053" class="riff_button" onclick="escolhido('053')">053</button></td>
-            <td><button id="054" class="riff_button" onclick="escolhido('054')">054</button></td>
-            <td><button id="055" class="riff_button" onclick="escolhido('055')">055</button></td>
-            <td><button id="056" class="riff_button" onclick="escolhido('056')">056</button></td>
-            <td><button id="057" class="riff_button" onclick="escolhido('057')">057</button></td>
-            <td><button id="058" class="riff_button" onclick="escolhido('058')">058</button></td>
-            <td><button id="059" class="riff_button" onclick="escolhido('059')">059</button></td>
-            <td><button id="060" class="riff_button" onclick="escolhido('060')">060</button></td>
-        </tr>
-        <tr>
-            <td><button id="061" class="riff_button" onclick="escolhido('061')">061</button></td>
-            <td><button id="062" class="riff_button" onclick="escolhido('062')">062</button></td>
-            <td><button id="063" class="riff_button" onclick="escolhido('063')">063</button></td>
-            <td><button id="064" class="riff_button" onclick="escolhido('064')">064</button></td>
-            <td><button id="065" class="riff_button" onclick="escolhido('065')">065</button></td>
-            <td><button id="066" class="riff_button" onclick="escolhido('066')">066</button></td>
-            <td><button id="067" class="riff_button" onclick="escolhido('067')">067</button></td>
-            <td><button id="068" class="riff_button" onclick="escolhido('068')">068</button></td>
-            <td><button id="069" class="riff_button" onclick="escolhido('069')">069</button></td>
-            <td><button id="070" class="riff_button" onclick="escolhido('070')">070</button></td>
-        </tr>
-        <tr>
-            <td><button id="071" class="riff_button" onclick="escolhido('071')">071</button></td>
-            <td><button id="072" class="riff_button" onclick="escolhido('072')">072</button></td>
-            <td><button id="073" class="riff_button" onclick="escolhido('073')">073</button></td>
-            <td><button id="074" class="riff_button" onclick="escolhido('074')">074</button></td>
-            <td><button id="075" class="riff_button" onclick="escolhido('075')">075</button></td>
-            <td><button id="076" class="riff_button" onclick="escolhido('076')">076</button></td>
-            <td><button id="077" class="riff_button" onclick="escolhido('077')">077</button></td>
-            <td><button id="078" class="riff_button" onclick="escolhido('078')">078</button></td>
-            <td><button id="079" class="riff_button" onclick="escolhido('079')">079</button></td>
-            <td><button id="080" class="riff_button" onclick="escolhido('080')">080</button></td>
-        </tr>
-        <tr>
-            <td><button id="081" class="riff_button" onclick="escolhido('081')">081</button></td>
-            <td><button id="082" class="riff_button" onclick="escolhido('082')">082</button></td>
-            <td><button id="083" class="riff_button" onclick="escolhido('083')">083</button></td>
-            <td><button id="084" class="riff_button" onclick="escolhido('084')">084</button></td>
-            <td><button id="085" class="riff_button" onclick="escolhido('085')">085</button></td>
-            <td><button id="086" class="riff_button" onclick="escolhido('086')">086</button></td>
-            <td><button id="087" class="riff_button" onclick="escolhido('087')">087</button></td>
-            <td><button id="088" class="riff_button" onclick="escolhido('088')">088</button></td>
-            <td><button id="089" class="riff_button" onclick="escolhido('089')">089</button></td>
-            <td><button id="090" class="riff_button" onclick="escolhido('090')">090</button></td>
-        </tr>
-        <tr>
-            <td><button id="091" class="riff_button" onclick="escolhido('091')">091</button></td>
-            <td><button id="092" class="riff_button" onclick="escolhido('092')">092</button></td>
-            <td><button id="093" class="riff_button" onclick="escolhido('093')">093</button></td>
-            <td><button id="094" class="riff_button" onclick="escolhido('094')">094</button></td>
-            <td><button id="095" class="riff_button" onclick="escolhido('095')">095</button></td>
-            <td><button id="096" class="riff_button" onclick="escolhido('096')">096</button></td>
-            <td><button id="097" class="riff_button" onclick="escolhido('097')">097</button></td>
-            <td><button id="098" class="riff_button" onclick="escolhido('098')">098</button></td>
-            <td><button id="099" class="riff_button" onclick="escolhido('099')">099</button></td>
-            <td><button id="100" class="riff_button" onclick="escolhido('100')">100</button></td>
-        </tr>
-    </table>
+
     <script src="script.js"></script>
 </body>
 </html>
