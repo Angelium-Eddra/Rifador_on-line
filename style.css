@@ -1,81 +1,91 @@
-html {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    border: 1px solid black;
+/* ANIMAÇÔES DA PÁGINA */
+@keyframes selecionado{
+   0% {}
+   100% {font-size: 12px; color: black;}
+}
+@keyframes desselecionado{
+   0% {}
+   100% { font-size: 15px; color: black}
+}
 
+/* -------------------- */
+
+
+/* Fundinho bonito */
+html{
+   font-family: sans-serif;
+   background-image: linear-gradient(90deg, rgb(31, 31, 228) 20%, rgb(96, 22, 146));
 }
 
 
-.input {
-    padding: 10px;
-    padding-left: 15px;
-    width: 300px; height: 20px;
-    border: 0;
-    border-radius: 30px;
-    color: rgb(73, 73, 73);
-    background-color:rgb(175, 175, 175);
+
+/* Fundo branco, formatção e posição do formulário */
+#fundo{
+   position: absolute;
+   background-color: #fff;
+   transform: translate(-50%, 0%);
+   top: 5%;
+   left: 50%;
+   width: 350px; height: 500px;
+   border-radius: 5px;
+
+}
+/* Formatação do conteúdo */
+#conteudo_cliente{
+   position: absolute;
+   transform: translate(-50%, 0%);
+   top: 5%;
+   left: 50%;
+   padding-left: 20px;
+   padding-top: 20px;
+   width: 250px; height: 430px;
+   border: 1px solid #eee;
+   border-radius: 20px;
 }
 
-.riff_button {
-    width: 50px;
-    height: 50px;
-    size:  40px;
-    margin: 2px;
-    color: white;
-    background-color: rgb(0, 0, 255);
-    border-radius: 25px;
-    border: transparent;
-    font-family:Arial, Helvetica, sans-serif;
+/* Estilização da área de texto */
+.info_set input{
+   border: none;
+   border-bottom: 1px solid #a9a9a9;
+   height: 20px;
+   font-size: 17px;
+   margin-top: 10px;
 }
 
-#form_info {
-    padding: 20px;
-    width: 60%;
-    min-width: 400px;
-    height: 420px;
-    background-color: rgb(228, 240, 245);
-    margin: auto;
-    border-radius: 20px;
+/* Estilização do indicador de texto */
+.info_set p{
+   margin-top: 5px;
+   color: rgb(0, 0, 0);
+   font-size: 15px;
+   animation-name: desselecionado;
+   animation-duration: 0.2s;
 }
 
-#ok_button {
-    position: relative;
-    width: 100px;
-    height: 30px;
-    font-size: 15px;
-    background-color: blue;
-    color: white;
-    border: 0;
-    border-radius: 8px;
-    bottom: -30px;
-    left: -20px;
+/* Regular tamanho do indicador ao clicar */
+.info_set input:focus + p{
+   font-size: 12px;
+   animation-name: selecionado;
+   animation-duration: 0.2s;
 }
 
-#cancel_button {
-    position: relative;
-    width: 100px;
-    height: 30px;
-    background-color: red;
-    color: white;
-    font-size: 15px;
-    border: 0;
-    border-radius: 8px;
-    bottom: -30px;
-    right: -20px;
+/* Estilizar opção forma de pagamento */
+#choice_pag{
+   position: relaive;
 }
 
-#table {
-    position: relative;
-    margin: auto;
-    margin-top: 50px;
+#pag_choices{
+   position: relative;
+   width: 220px; height: 30px;
+   margin-bottom: 10px;
+   background-color: #eee;
+   border: none;
+   border-radius: 4px;
+   padding-left: 15px;
 }
 
-#valor {
-    position: relative;
-    margin: auto;
-    margin-top: 20px;
-    width: 30%;
-    min-width: 100px;
-    font-size: 25px;
-    border-bottom: 2px solid  black;
+#actions{
+   position: absolute;
+   bottom: 10px;
+   left: 50px;
+   border: 1px solid black;
 }
