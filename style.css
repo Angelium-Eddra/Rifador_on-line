@@ -1,0 +1,91 @@
+/* ANIMAÇÔES DA PÁGINA */
+@keyframes selecionado{
+   0% {}
+   100% {font-size: 12px; color: black;}
+}
+@keyframes desselecionado{
+   0% {}
+   100% { font-size: 15px; color: black}
+}
+
+/* -------------------- */
+
+
+/* Fundinho bonito */
+html{
+   font-family: sans-serif;
+   background-image: linear-gradient(90deg, rgb(31, 31, 228) 20%, rgb(96, 22, 146));
+}
+
+
+
+/* Fundo branco, formatção e posição do formulário */
+#fundo{
+   position: absolute;
+   background-color: #fff;
+   transform: translate(-50%, 0%);
+   top: 5%;
+   left: 50%;
+   width: 350px; height: 500px;
+   border-radius: 5px;
+
+}
+/* Formatação do conteúdo */
+#conteudo_cliente{
+   position: absolute;
+   transform: translate(-50%, 0%);
+   top: 5%;
+   left: 50%;
+   padding-left: 20px;
+   padding-top: 20px;
+   width: 250px; height: 430px;
+   border: 1px solid #eee;
+   border-radius: 20px;
+}
+
+/* Estilização da área de texto */
+.info_set input{
+   border: none;
+   border-bottom: 1px solid #a9a9a9;
+   height: 20px;
+   font-size: 17px;
+   margin-top: 10px;
+}
+
+/* Estilização do indicador de texto */
+.info_set p{
+   margin-top: 5px;
+   color: rgb(0, 0, 0);
+   font-size: 15px;
+   animation-name: desselecionado;
+   animation-duration: 0.2s;
+}
+
+/* Regular tamanho do indicador ao clicar */
+.info_set input:focus + p{
+   font-size: 12px;
+   animation-name: selecionado;
+   animation-duration: 0.2s;
+}
+
+/* Estilizar opção forma de pagamento */
+#choice_pag{
+   position: relaive;
+}
+
+#pag_choices{
+   position: relative;
+   width: 220px; height: 30px;
+   margin-bottom: 10px;
+   background-color: #eee;
+   border: none;
+   border-radius: 4px;
+   padding-left: 15px;
+}
+
+#actions{
+   position: absolute;
+   bottom: 10px;
+   left: 50px;
+   border: 1px solid black;
+}

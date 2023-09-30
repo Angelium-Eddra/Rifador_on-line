@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Formulário</title>
+</head>
+<body>
+   <form action="">
+      <div id="fundo">
+         <div id="conteudo_cliente">
+         <span id="form_title"><strong >Registre sua aposta aqui</strong></span>
+         
+         <label class="info_set" for="nome">
+            <input type="text" id="nome">
+            <p class="ind">Insira seu nome</p>
+         </label>
+         <label class="info_set" for="tel">
+            <input type="text" id="tel">
+            <p class="ind">Insira seu telefone</p>
+         </label>
+         <div id="choice_pag">
+            <select name="forma_pagamento" id="pag_choices">
+               <option value="Selecione">Selecione</option>
+               <option value="Pix">Pix</option>
+               <option value="Dinheiro">Dinheiro</option>
+               <option value="Cartão">Cartão</option>
+            </select>
+         </div>
+         <div id="actions">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar dados</button>
+         </div>
+
+      </div>
+      </div>
+   </form>
+</body>
+</html>
