@@ -12,36 +12,38 @@
 	<div id="fundo"><div id="contorno"><div id="conteudo">
     	<span id="titulo">
       		<b>Preencher dados</b>
-      	</span>
-        <div class="input_text">
+      </span>
+      <div class="input_text">
       	<label id="nome" for="_nome">	
-          	<input type="text" id="_nome">
+          	<input type="text" id="_nome" required>
             <span>Digite seu nome completo</span>
         </label>
-      	</div>
+      </div>
         
       	
-      	<div class="input_text">
+      <div class="input_text">
       	<label id="tel" for="_tel">
-          	<input type="text" id="_tel">
+          	<input type="text" id="_tel" required>
             <span>Digite seu número de telefone</span>
-      	</div>
+			</label>
+      </div>
       		
       
-      	<div id="pagamento">
-      		<select>
-          		<option>Selecione</option>
-              	<option>Dinheiro</option>
-              	<option>Cartão</option>
-              	<option>Pix</option>
-          	</select>
-      	</div>
+      <div id="pagamento">
+      	<select>
+          	<option>Selecione</option>
+            <option>Dinheiro</option>
+            <option>Cartão</option>
+            <option>Pix</option>
+         </select>
+      </div>
         
-        <span id="confirma">
+      <span id="confirma">
         	<button id="enviar" type="submit">Enviar</button>
         	<button id="limpar" type="reset">Limpar</button>
-        </span>
-          </div></div></div>
+      </span>
+		<p id="aviso">Por favor, confirme as informações antes de enviar.</p>
+   </div></div></div>
 	
 
 	<div id="container_numeros">
