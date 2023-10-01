@@ -1,35 +1,56 @@
 /* -------- ANIMAÇÕES E SEUS USOS --------- */
 /* ----------------------------------------- */
 @keyframes campo_ativo_texto{
-	0% {}
+	0% {font-size: 15px;}
 	100% {font-size: 13px;}
 }
 @keyframes campo_inativo_texto{
-	0% {}
-	100% {font-size: 17px;}
+	0% {font-size: 13px;}
+	100% {font-size: 15px;}
 }
 
 
 @keyframes campo_ativo{
-	0% {}
+	0% {background-color: none; border-radius: 0px}
 	100% {background-color: #eee; border-radius: 5px}
 }
 
 @keyframes campo_inativo{
-	0% {}
+	0% {background-color: #eee; border-radius: 5px}
 	100% {background-color: none; border-radius: 0px}
 }
 
-/* .input_text input:focus + span{
-	animation-name: campo_ativo;
-	animation-duration: 2s;
-	background-color: #eee;
-} */
+
 
 .input_text input:focus + span{
 	animation-name: campo_ativo_texto;
 	animation-duration: 0.2s;
-	/* font-size: 13px; */
+	
+	font-size: 13px;
+}
+
+.input_text input:focus{
+	outline: 0;
+	box-shadow: 0 0 0 0;
+	animation-name: campo_ativo;
+	animation-duration: 0.2s;
+	background-color: #eee;
+	border-radius: 5px
+}
+
+.input_text input:focus{
+	outline: 0;
+	box-shadow: 0 0 0 0;
+	animation-name: campo_inativo;
+	animation-duration: 0.4s;
+	background-color: none;
+	border-radius: 0px;
+}
+
+.input_text input:not(focus) + span{
+	animation-name: campo_inativo_texto;
+	animation-duration: 0.4s;
+	font-size: 15px;
 }
 
 
@@ -40,8 +61,8 @@
 html{
 	font-family: 'Roboto', sans-serif;
 	background-image: linear-gradient(135deg, rgb(24, 24, 160), rgb(193, 26, 199));
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 150%;
 
 }
 
@@ -98,7 +119,7 @@ html{
 
 .input_text span{
 	display: block;
-  	font-size: 13px;
+  	font-size: 15px;
 }
 
 .input_text input{
@@ -109,11 +130,9 @@ html{
 	font-size: 17px;
   	border-radius: 0px;
 	border-bottom: 2px solid #eee;
-
+	padding-left: 5px;
+	padding-top: 2px;
 }
-
-
-
 
 #pagamento{
   	margin-top: 40px;
@@ -155,4 +174,71 @@ html{
 
 #limpar{
 	background-color: red;
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+
+#container_numeros{
+	position: absolute;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 120%;
+	min-width: 600px; min-height: 600px;
+	width: 60%; height: 800px;
+	border-radius: 15px;
+	margin-bottom: 0px;
+}
+
+#titulo_tabela{
+	display: block;
+	position: absolute;
+	text-align: center;
+	border-bottom: 2px solid black;
+	width: 400px;
+	transform: translate(-50%, -50%);
+	top: 15px;
+	left: 50%
+}
+#tabela_numeros{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 95%;
+	height: 80%;
+	border: 2px solid #eee;
+	border-radius: 15px;
+}
+
+td{
+	position: relative;
+
+}
+
+.container input{
+	display: none;
+}
+
+.checkmark{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	background-color: blue;
+	color: #fff;
+	width: 45px;
+	height: 45px;
+	border-radius: 999px;
+	text-align: center;
+	line-height: 45px;
+}
+
+.container input:hover + .checkmark{
+	background-color: rgb(122, 122, 220);
+}
+
+.container input:checked + .checkmark{
+	background-color: rgb(21, 124, 90);
 }
