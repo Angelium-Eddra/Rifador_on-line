@@ -1,157 +1,34 @@
-/* -------- ANIMAÇÕES E SEUS USOS --------- */
-/* ----------------------------------------- */
-@keyframes campo_ativo_texto{
-	0% {}
-	100% {font-size: 13px;}
-}
-@keyframes campo_inativo_texto{
-	0% {}
-	100% {font-size: 17px;}
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
 }
 
-
-@keyframes campo_ativo{
-	0% {}
-	100% {background-color: #eee; border-radius: 5px}
+:root{
+   --azul: #406DDB;
+   --branco: #FCFFFD;
+   --verde: #64B6AC;
+   --verde-claro: #C0FDFB;
 }
 
-@keyframes campo_inativo{
-	0% {}
-	100% {background-color: none; border-radius: 0px}
-}
-
-/* .input_text input:focus + span{
-	animation-name: campo_ativo;
-	animation-duration: 2s;
-	background-color: #eee;
-} */
-
-.input_text input:focus + span{
-	animation-name: campo_ativo_texto;
-	animation-duration: 0.2s;
-	/* font-size: 13px; */
-}
-
-
-/* ----------------------------------------- */
-
-
-/* ----------------------------------------- */
-html{
-	font-family: 'Roboto', sans-serif;
-	background-image: linear-gradient(135deg, rgb(24, 24, 160), rgb(193, 26, 199));
-	width: 100vw;
-	height: 100vh;
+header{
 
 }
 
-#texto_background{
-	color:#fff;
-	font-size: 250px;
-	margin: -20% -20%;
-	transform: rotate(25deg);
-	width: 100%;
-	height: 10%;
+.contato_dono_rifa img, .container_contatos img{
+   width: 25px; height: 25px;
 }
 
-#fundo{
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 35%;
-	left: 50%;
-	width: 350px;
-	height: 450px;
-	border-radius: 15px;
-	background-color: #fff;
+.cadastro{
+   display: flex;
+   flex-direction:column;
+   margin: ;
+   padding: 15px;
+   width: 60%;
+   
 }
 
-#contorno{
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50%;
-	left: 50%;
-	width: 320px;
-	height: 420px;
-	margin: 0px;
-	padding-left: 0px;
-	border: 2px solid #eee;
-	border-radius: 15px;
+.input_de_texto small{
+   display: block;
 }
 
-#conteudo{
-	position: absolute;
-	margin: 30px 30px;
-	width: 300px;
-	height: 400px;
-}
-
-#titulo{
-	position: relative;
-	font-size: 20px;
-	margin-bottom: 30px;
-}
-
-.input_text{
-  	margin: 20px 0px 20px 0px;
-}
-
-.input_text span{
-	display: block;
-  	font-size: 13px;
-}
-
-.input_text input{
-	width: 250px;
-  	height: 20px;
-  	border: none;
-  	margin-bottom: 5px;
-	font-size: 17px;
-  	border-radius: 0px;
-	border-bottom: 2px solid #eee;
-
-}
-
-
-
-
-#pagamento{
-  	margin-top: 40px;
-}
-
-#pagamento select{
-	height: 25px;
-  	width: 250px;
-  	background-color: #eee;
-  	border-radius: 5px;
-  	border: none;
-  	padding-left:15px;
-  	font-size: 15px;
-}
-
-#confirma{
-	position: absolute;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	width: 250px;
-	bottom: 20px;
-}
-
-#confirma button{
-	position: relative;
-	margin-right: 10px;
-	margin-left: 10px;
-	width: 80px;
-  	height: 40px;
-  	border: none;
-  	bottom: 10px;
-	border-radius: 8px;
-	color: #fff;
-}
-
-#enviar{
-	background-color:blue;
-}
-
-#limpar{
-	background-color: red;
-}

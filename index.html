@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Riffo</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Riffo: sua rifa on-line</title>
 </head>
-
 <body>
-	<div id="fundo"><div id="contorno"><div id="conteudo">
-    	<span id="titulo">
-      		<b>Preencher dados</b>
-      	</span>
-        <div class="input_text">
-      	<label id="nome" for="_nome">	
-          	<input type="text" id="_nome">
-            <span>Digite seu nome completo</span>
-        </label>
-      	</div>
-        
-      	
-      	<div class="input_text">
-      	<label id="tel" for="_tel">
-          	<input type="text" id="_tel">
-            <span>Digite seu número de telefone</span>
-      	</div>
-      		
-      
-      	<div id="pagamento">
-      		<select>
-          		<option>Selecione</option>
-              	<option>Dinheiro</option>
-              	<option>Cartão</option>
-              	<option>Pix</option>
-          	</select>
-      	</div>
-        
-        <span id="confirma">
-        	<button id="enviar" type="submit">Enviar</button>
-        	<button id="limpar" type="reset">Limpar</button>
-        </span>
-          </div></div></div>
-</body>
+	<header>
+		<h1>Riffo: sua rifa on-line</h1>
+	</header>
+	<main class="sobre_a_rifa">
+		<div class="info_cabecalho">
+			<h2>Mês de outubro: Bolo confeiteiro</h2>
+			<h3>Por Lulu Doces</h3>
+			<div class="contato_dono_rifa">
+				<span><a href="https://www.instagram.com/" target="_blank"><img src="./imgs/instagram.png" alt=""></a></span>
+				<span><a href="https://www.instagram.com/" target="_blank"><img src="./imgs/whatsapp.png" alt=""></a></span>
+			</div>
+		</div>
 
+		<div class="info_produto">
+			<img class="fotos_produto" src="#" alt="">
+			<p>Bolo de confeiteiro profissional</p>
+			
+			<img class="fotos_produto" src="#" alt="">
+			<p>100 salgados e 100 docinhos</p>			
+			
+			<img class="fotos_produto" src="#" alt="">
+			<p>Cesta de chocolates cacau-show</p>		
+			
+			<img class="fotos_produto" src="#" alt="">
+			<p>1 Torta de frango desfiado</p>
+		</div>
+
+	</div>
+	
+	<div class="Selecao_e_cadastro">
+		<h3>Vamos lá?</h3>
+		<h4>Selecione os números desejados</h4>
+		<form>
+			<table class="tabela_numeros">
+			<!-- Numeros de tal -->
+			</table>
+			<h3>Quase lá!</h3>
+			<h4>Insira seus dados abaixo</h4>
+<!-- -------------------------------------------- -->
+			<div class="cadastro">
+				<div class="input_de_texto">
+				<label for="nome">
+					<input type="text" id="nome" required>
+					<small>Insira seu nome completo</small>
+				</label>
+				
+				<label for="tel">
+					<input type="tel" id="tel" required>
+					<small>Insira seu número de telefone</small>
+				</label>
+				</div>
+
+				<select name="forma_pagamento" id="forma_pagamento">
+					<option value="#">Selecione</option>
+					<option value="#">Dinheiro</option>
+					<option value="#">Cartão</option>
+					<option value="#">Pix</option>
+				</select>
+			
+				
+				<div class="acao_e_aviso">
+					<p>Por favor, confira os seus dados antes de enviá-los.</p>
+					<button type="submit">Enviar</button>
+					<button type="reset">Cancelar</button>
+				</div>
+
+			</div>
+		</form>
+		<footer>
+			<p>Achou interessante?</p>
+			<p>Conatate-nos</p>
+			<div class="container_contatos">
+				<span><a class="contatos" href=""><img src="./imgs/instagram.png" alt=""></a></span>
+				<span><a class="contatos" href=""><img src="./imgs/whatsapp.png" alt=""></a></span>
+			</div>
+		</footer>
+	</main>
+</body>
 </html>
